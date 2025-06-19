@@ -1,0 +1,41 @@
+def resta_numeros():
+  """
+  Resta dos números enteros ingresados por el usuario.
+  """
+  try:
+    num1 = int(input("Ingrese el primer número entero: "))
+    num2 = int(input("Ingrese el segundo número entero: "))
+    resultado = num1 - num2
+    print("La resta de", num1, "y", num2, "es:", resultado)
+  except ValueError:
+    print("Error: Por favor, ingrese números enteros válidos.")
+
+# Llamar a la función para ejecutar el programa
+resta_numeros()
+def dividir_enteros(dividendo, divisor):
+  """Divide dos números enteros y maneja la división por cero.
+
+  Args:
+    dividendo: El número que se va a dividir.
+    divisor: El número por el cual se va a dividir.
+
+  Returns:
+    El resultado de la división si el divisor no es cero,
+    o una cadena indicando que la división por cero no es posible.
+  """
+  if divisor == 0:
+    return "Error: No se puede dividir por cero."
+  else:
+    return dividendo / divisor
+
+# Solicitar los números al usuario
+try:
+  dividendo = int(input("Ingrese el dividendo: "))
+  divisor = int(input("Ingrese el divisor: "))
+except ValueError:
+    print("Error: Debe ingresar números enteros.")
+    exit()
+
+# Llamar a la función y mostrar el resultado
+resultado = dividir_enteros(dividendo, divisor)
+print("El resultado de la división es:", resultado)
