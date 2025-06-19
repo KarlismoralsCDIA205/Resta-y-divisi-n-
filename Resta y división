@@ -27,7 +27,7 @@ def dividir_enteros(dividendo, divisor):
     return "Error: No se puede dividir por cero."
   else:
     return dividendo / divisor
-
+suma y multiplicacion 
 # Solicitar los números al usuario
 try:
   dividendo = int(input("Ingrese el dividendo: "))
@@ -39,3 +39,17 @@ except ValueError:
 # Llamar a la función y mostrar el resultado
 resultado = dividir_enteros(dividendo, divisor)
 print("El resultado de la división es:", resultado)
+
+# Pedimos al usuario dos números
+numero1 = float(input("Ingresa el primer número: "))
+numero2 = float(input("Ingresa el segundo número: "))
+
+# Calculamos la suma
+suma = numero1 + numero2
+
+# Calculamos la multiplicación
+multiplicacion = numero1 * numero2
+
+# Mostramos los resultados
+print("La suma de los dos números es:", suma)
+print("La multiplicación de los dos números es:", multiplicacion)
